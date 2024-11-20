@@ -1,0 +1,142 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ECF0F1;
+  color: #333333;
+}
+
+/* Header */
+header {
+  background-color: #2C3E50;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+}
+
+/* Navigation Menu */
+nav {
+  background-color: #18BC9C;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 0;
+  display: block;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+/* Main Content */
+main {
+  padding: 40px 20px;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-family: 'Lato', sans-serif;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  background-color: #FFFFFF;
+  width: 300px;
+  margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card-content {
+  padding: 20px;
+}
+
+.product-card-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.product-card-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-card-content a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #18BC9C;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.product-card-content a:hover {
+  background-color: #149077;
+}
+
+/* Footer */
+footer {
+  background-color: #2C3E50;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
